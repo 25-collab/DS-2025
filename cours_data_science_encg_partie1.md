@@ -174,7 +174,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Charger un dataset en ligne (exemple : ventes d'une entreprise)
-url = "https://raw.githubusercontent.com/datasets/gdp/master/data/gdp.csv"
+url = "https://raw.githubusercontent.com/datasets/gdp/master/data/gdp.csv" # renvoie vers un fichier CSV brut hébergé sur GitHub, contenant des données sur le Produit Intérieur Brut (PIB) de différents pays à travers les années. Ce fichier fait partie du projet open data “datasets/gdp” publié par datahub.io, une plateforme de partage de données ouvertes. Le jeu de données provient principalement de la Banque mondiale et présente des informations telles que le nom et le code du pays, l’année, ainsi que la valeur du PIB exprimée en dollars américains. Ce lien est souvent utilisé pour importer directement les données dans des outils d’analyse, comme Python ou Excel, afin d’effectuer des études économiques ou des comparaisons de croissance entre pays.
+
 df = pd.read_csv(url)
 
 # Afficher les premières lignes
