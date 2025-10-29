@@ -123,20 +123,20 @@ conda install pandas numpy matplotlib seaborn scikit-learn jupyter
 **Structure d'un projet Data Science :**
 
 ```
-projet_data_science/
+projet_data_science/ # le nom du projet 
 │
 ├── data/
-│   ├── raw/              # Données brutes
-│   ├── processed/        # Données nettoyées
+│   ├── raw/              # Données brutes # on depose les données brutes 
+│   ├── processed/        # Données nettoyées # 
 │   └── external/         # Données externes
-│
+│ # la partie script: 
 ├── notebooks/            # Jupyter notebooks pour exploration
 ├── src/                  # Code source
 │   ├── data/            # Scripts de traitement des données
 │   ├── features/        # Feature engineering
 │   ├── models/          # Modèles ML
 │   └── visualization/   # Visualisations
-│
+│ # la partie machine learning 
 ├── models/              # Modèles entraînés sauvegardés
 ├── reports/             # Rapports et analyses
 └── requirements.txt     # Dépendances
