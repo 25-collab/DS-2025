@@ -1,6 +1,4 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
 
-# "Analyse statistique descriptive détaillée du dataset Heart Disease 1988 (303 patients, bases Cleveland, Hongrie, Suisse, VA Long Beach). Fournis pour chaque variable quantitative : moyenne, médiane, écart-type, min, max. Pour les variables catégorielles, donne la distribution en effectifs et pourcentages. Présente le profil démographique (âge, sexe) et clinique (pression artérielle, cholestérol, type de douleur, etc.). Inclus une synthèse sur la prevalence de la maladie cardiaque (classe cible 0 vs 1+). Informe sur le traitement des valeurs manquantes. Produit un rapport clair et structuré, accessible aux cliniciens et chercheurs en santé, avec tableaux et texte explicatif." ajoute des corrélations et le code python de ce travail
 
 Voici une analyse statistique descriptive détaillée du dataset "Heart Disease 1988," provenant des bases Cleveland, Hongrie, Suisse, et VA Long Beach, avec un total de 303 patients.
 
