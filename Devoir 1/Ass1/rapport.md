@@ -83,57 +83,6 @@ print(df.isnull().sum())
 corr = df[quant_vars + ['target']].corr()
 print(corr)
 ```
-
-
-- La cible binaire (présence ou absence de maladie) montre environ 54% de patients avec maladie (valeurs 1+) et 46% sans (valeur 0).
-
-
-### Corrélations
-
-- Les corrélations entre variables quantitatives et la maladie (target) ont été calculées, ce qui aide à comprendre les relations linéaires potentielles entre les facteurs cliniques et la pathologie.
-
-
-### Gestion des valeurs manquantes
-
-- Mention explicite de l'absence ou gestion des valeurs manquantes, garantissant la robustesse des analyses.
-
-***
-
-### Code Python pour reproduire cette analyse
-
-```python
-import pandas as pd
-import numpy as np
-
-# Chargement du dataset Heart Disease
-# Remplacer 'heart_disease.csv' par le chemin réel du fichier
-
-df = pd.read_csv('heart_disease.csv')
-
-# Variables quantitatives
-quant_vars = ['age', 'resting_bp', 'cholesterol', 'max_heart_rate']
-
-# Statistiques descriptives
-print(df[quant_vars].describe())
-print(df[quant_vars].median())
-
-# Variables catégorielles
-cat_vars = ['sex', 'fasting_bs', 'chest_pain_type', 'ecg_result', 'exercise_angina', 'num_major_vessels', 'thal']
-for var in cat_vars:
-    print(df[var].value_counts())
-    print(df[var].value_counts(normalize=True) * 100)
-
-# Prévalence maladie cardiaque
-print(df['target'].value_counts(normalize=True) * 100)
-
-# Valeurs manquantes
-print(df.isnull().sum())
-
-# Matrice de corrélation
-corr = df[quant_vars + ['target']].corr()
-print(corr)
-```
-
 Ce rapport synthétise les données démographiques et cliniques essentielles, les distributions, ainsi que les corrélations pour une analyse approfondie dans un contexte médical et machine learning. Le code Python fournit un outil simple pour générer ces statistiques et mieux comprendre le profil des patients du dataset 1988.[^1][^2][^3]
 
 <div align="center">⁂</div>
@@ -218,7 +167,6 @@ corr = df[quant_vars + ['target']].corr()
 print(corr)
 ```
 
-Ce rapport synthétise les données démographiques et cliniques essentielles, les distributions, ainsi que les corrélations pour une analyse approfondie dans un contexte médical et machine learning. Le code Python fournit un outil simple pour générer ces statistiques et mieux comprendre le profil des patients du dataset 1988.[^1][^2][^3]
 
 <div align="center">⁂</div>
 
