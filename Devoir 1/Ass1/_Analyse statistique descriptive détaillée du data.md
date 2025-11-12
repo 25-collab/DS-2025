@@ -1,4 +1,3 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
 
 
 Voici une analyse statistique descriptive détaillée du dataset "Heart Disease 1988," provenant des bases Cleveland, Hongrie, Suisse, et VA Long Beach, avec un total de 303 patients.
