@@ -4,7 +4,7 @@ Voici une analyse statistique descriptive détaillée du dataset "Heart Disease 
 
 ### Statistiques descriptives des variables quantitatives
 
-Les principales variables quantitatives analysées sont l'âge, la pression artérielle au repos, le cholestérol sérique et la fréquence cardiaque maximale.
+Les principales variables quantitatives analysées sont l'âge, la pression artérielle au repos, le cholestérol sérique et la fréquence cardiaque maximale. 
 
 - Âge : moyenne environ 54 ans, médiane proche, écart-type montrant une dispersion modérée, extrêmes entre 29 et 71 ans.
 - Pression artérielle : moyenne autour de 131 mm Hg, avec un minimum de 94 et un maximum de 200.
