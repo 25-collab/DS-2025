@@ -83,5 +83,5 @@ print(df.isnull().sum())
 corr = df[quant_vars + ['target']].corr()
 print(corr)
 ```
-VA Long Beach, avec un total de 303 patients.
+
 
