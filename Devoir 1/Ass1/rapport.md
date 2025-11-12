@@ -4,7 +4,7 @@
 
 Voici une analyse statistique descriptive détaillée du dataset "Heart Disease 1988," provenant des bases Cleveland, Hongrie, Suisse, et VA Long Beach, avec un total de 303 patients.
 
-### Statistiques descriptives des variables quantitatives
+### Statistiques descriptives des variables quantitatives 
 
 Les principales variables quantitatives analysées sont l'âge, la pression artérielle au repos, le cholestérol sérique et la fréquence cardiaque maximale.
 
