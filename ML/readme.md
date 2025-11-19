@@ -6,8 +6,6 @@
 # Rapport Descriptif du Notebook Machine Learning
 
 
----
-
 ## Objectif du notebook
 
 Ce notebook met en œuvre une analyse de données et des modèles de machine learning sur le jeu de données "Wine Quality" de l'UCI. L’objectif principal est de modéliser la qualité des vins blancs à partir de mesures physico-chimiques en utilisant une approche de classification supervisée par un algorithme des k-plus proches voisins (k-NN)[file:1].
