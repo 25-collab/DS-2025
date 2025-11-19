@@ -51,10 +51,4 @@ Les étapes essentielles du notebook sont :
 
 ```
 
-[1](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/69560299/3260c04e-a039-4c92-b311-44ecc750ed2c/ML.ipynb)
-![Matrice de corrélation des variables du vin](Matrice-de-correlation-machine-learning.jpg)
-# descrptif de la matrice de corrélation:
-![Matrice de corrélation des variables du vin](Matrice-de-correlation-machine-learning.jpg)
-
-*Figure : Matrice de corrélation montrant les relations linéaires entre les caractéristiques et la qualité du vin. Les couleurs rouges indiquent des corrélations positives, les bleues des corrélations négatives ; plus la couleur est vive, plus la corrélation est forte. La qualité du vin est plus liée à la teneur en alcool et en sulfates qu'aux autres variables.*
 
