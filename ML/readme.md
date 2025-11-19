@@ -1,9 +1,10 @@
-Voici un rapport descriptif en markdown sur le notebook fourni, avec la mention de votre nom et prénom en entête selon votre demande.
 
-```markdown
+NOM: BENAZZOUZ
+PRENOM: OUMAIMA
+FILIERE: CONTROLE, AUDIT ET CONSEIL
+GROUPE: 1
 # Rapport Descriptif du Notebook Machine Learning
 
-**Nom et prénom :** [À compléter]
 
 ---
 
@@ -48,7 +49,6 @@ Les étapes essentielles du notebook sont :
 
 ---
 
-*NB : Remplissez votre nom et prénom ci-dessus avant diffusion.*
 ```
 
 [1](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/69560299/3260c04e-a039-4c92-b311-44ecc750ed2c/ML.ipynb)
