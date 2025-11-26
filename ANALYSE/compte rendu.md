@@ -1,6 +1,8 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
+<img src="IMAGE CARTE ETUDIANT.jpg" style="height:464px;margin-right:432px"/>
+# NOM ET PRENOM : OUMAIMA BENAZZOUZ
+# FILIERE: CONTROLE, AUDIT ET CONSEIL
+# GROUPE: 2
 
-# Voici un compte rendu complet en format Markdown, reformulé pour correspondre à un projet d’analyse business utilisant toutes les étapes du Machine Learning appliquées aux Sales Insights.
 
 📊 Compte Rendu du Projet Machine Learning – Sales Insights
 Ce document résume les différentes étapes exécutées dans le notebook Python consacré à l’analyse d’un problème business lié aux ventes (Sales Insights) en utilisant les techniques de Data Analytics et Machine Learning.
