@@ -1,10 +1,12 @@
 <img src="IMAGE CARTE ETUDIANT.jpg" style="height:464px;margin-right:432px"/>
-##NOM ET PRENOM : OUMAIMA BENAZZOUZ
-##FILIERE: CONTROLE, AUDIT ET CONSEIL
-##GROUPE: 2
+## NOM ET PRENOM : OUMAIMA BENAZZOUZ
+
+## FILIERE: CONTROLE, AUDIT ET CONSEIL
+
+## GROUPE: 2
 
 
-📊 Compte Rendu du Projet Machine Learning – Sales Insights
+## Compte Rendu du Projet Machine Learning – Sales Insights
 Ce document résume les différentes étapes exécutées dans le notebook Python consacré à l’analyse d’un problème business lié aux ventes (Sales Insights) en utilisant les techniques de Data Analytics et Machine Learning.
 
 ## 1. 🎯 Objectif du Projet
