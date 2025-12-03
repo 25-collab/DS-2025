@@ -1,0 +1,67 @@
+# Rapport d'Analyse : Infrastructure IT des Villes Indiennes (2019-2024)
+
+## 1. Introduction
+
+Ce rapport présente une analyse approfondie des données relatives à l'infrastructure technologique de 30 villes indiennes majeures sur la période allant de 2019 à 2024. Dans un contexte de développement rapide des initiatives "Smart City", l'objectif est d'évaluer la maturité numérique de ces métropoles.
+
+L'étude s'appuie sur un jeu de données contenant des indicateurs clés tels que :
+*   Le taux d'accès à Internet des ménages.
+*   La couverture haut débit (fixe et mobile 3G/4G).
+*   L'adoption de services publics intelligents (compteurs d'eau/électricité, transports connectés).
+
+Ce document détaille les étapes d'exploration des données (EDA) réalisées et explicite la méthodologie de Machine Learning suggérée par l'architecture du code.
+
+---
+
+## 2. Développement
+
+### 2.1 Analyse Exploratoire des Données (EDA)
+
+Avant toute modélisation, une phase d'audit et de visualisation a été menée pour comprendre la structure et la qualité des données.
+
+*   **Audit des Données :**
+    *   L'utilisation de `df.info()` et `df.describe()` a permis de vérifier l'intégrité des types de variables (numériques vs catégorielles) et d'identifier la distribution statistique des indicateurs (moyennes, écarts-types).
+    *   Cette étape est cruciale pour détecter d'éventuelles valeurs aberrantes ou manquantes.
+
+*   **Analyse Temporelle :**
+    *   À l'aide de `sns.barplot`, nous avons visualisé l'évolution de l'accès à Internet par année.
+    *   **Observation :** Une tendance claire se dégage sur la période 2019-2024, illustrant la progression de la pénétration numérique en Inde.
+
+*   **Benchmarking des Villes (Top 15) :**
+    *   Le script isole et trie les villes performantes via `sort_values`.
+    *   Une boucle itérative génère des graphiques comparatifs pour chaque colonne numérique (ex: *Smart Water Meters*, *4G Coverage*).
+    *   Cela permet d'identifier les villes leaders (Hubs technologiques) et celles nécessitant des investissements infrastructurels.
+
+### 2.2 Méthodologie de Machine Learning (Pipeline et Modélisation)
+
+Le code intègre les bibliothèques `sklearn` nécessaires à la construction d'un modèle prédictif robuste. Voici l'explication théorique des étapes préparées :
+
+#### Étape A : Prétraitement (Preprocessing)
+Les données brutes nécessitent une transformation avant d'être ingérées par les algorithmes :
+1.  **Imputation (`SimpleImputer`) :** Gestion des données manquantes en remplaçant les valeurs nulles (NaN) par la moyenne ou la médiane de la colonne, garantissant la continuité du traitement.
+2.  **Encodage (`LabelEncoder`, `OneHotEncoder`) :** Transformation des variables textuelles (comme le nom des villes) en valeurs numériques interprétables par la machine.
+3.  **Normalisation (`StandardScaler`) :** Mise à l'échelle des variables pour que les pourcentages (0-100) et les grands nombres aient le même poids lors de l'apprentissage (moyenne centrée sur 0, écart-type de 1).
+
+#### Étape B : Architecture du Flux (`Pipeline`)
+L'utilisation de `Pipeline` et `ColumnTransformer` permet d'automatiser séquentiellement les étapes de nettoyage et de transformation. Cela assure la reproductibilité du code et évite la fuite d'informations (Data Leakage) entre les données d'entraînement et de test.
+
+#### Étape C : Séparation (`train_test_split`)
+Division du dataset en deux sous-ensembles :
+*   **Train Set :** Pour entraîner le modèle à reconnaître les motifs.
+*   **Test Set :** Pour valider la performance du modèle sur des données inconnues.
+
+#### Étape D : Choix des Modèles
+Deux algorithmes de classification ont été importés pour prédire, par exemple, le statut de développement d'une ville :
+1.  **Régression Logistique (`LogisticRegression`) :** Modèle linéaire utilisé comme référence (baseline) pour estimer la probabilité d'appartenance à une classe.
+2.  **Support Vector Machine (`SVC`) :** Algorithme puissant pour trouver l'hyperplan optimal séparant les différentes classes de villes dans un espace multidimensionnel.
+
+#### Étape E : Évaluation de la Performance (`matthews_corrcoef`)
+Le choix du **Coefficient de Corrélation de Matthews (MCC)** est particulièrement pertinent. Contrairement à la précision simple, le MCC est une métrique équilibrée qui reste fiable même si les classes sont de tailles très différentes, offrant un score entre -1 (désaccord total) et +1 (prédiction parfaite).
+
+---
+
+## 3. Conclusion
+
+L'analyse menée met en évidence la dynamique positive de la transformation numérique des villes indiennes entre 2019 et 2024. Les visualisations confirment une hétérogénéité entre les métropoles, certaines se détachant nettement sur les critères de "Smart City".
+
+L'architecture logicielle mise en place prépare le terrain pour une approche prédictive. L'implémentation effective de la pipeline de Machine Learning (nettoyage -> transformation -> modélisation SVC/LogReg) permettrait de classifier automatiquement les villes futures ou de prédire leur score de développement technologique en fonction des premiers indicateurs disponibles.
