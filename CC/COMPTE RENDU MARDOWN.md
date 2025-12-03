@@ -1,3 +1,7 @@
+
+<img src="photo of me .jpg" style="height:464px;margin-right:432px"/>
+
+
 ## OUMAIMA BENAZZOUZ
 ## G1 CAC 1
 ## INTRODUCTION:
