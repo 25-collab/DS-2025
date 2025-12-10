@@ -8,6 +8,9 @@
 ## INTRODUCTION:
 
 Ce jeu de données traite de la transformation numérique et de la modernisation des infrastructures urbaines en Inde, en analysant l'évolution de 30 villes majeures sur la période 2019-2024. La problématique centrale consiste à évaluer la progression des initiatives "Smart City" à travers des indicateurs clés tels que l'accès à Internet, la couverture haut débit (3G/4G), et l'adoption de technologies de gestion intelligente (compteurs d'eau et d'électricité, transports dynamiques), afin de mesurer la maturité digitale de ces métropoles et d'identifier les disparités technologiques régionales.[^1]
+OBJECTIF:L’objectif de ce rapport est de concevoir et d’évaluer un agent d’intelligence artificielle capable de prédire le niveau de maturité « Smart City » des villes indiennes à partir de leurs indicateurs d’infrastructures numériques, dans une logique de problème de classification binaire.​ en répondant est ce que une ville est développée en répondant par oui ou non
+
+
 
 ## 1- Explication du Code et des Étapes de Machine Learning
 
